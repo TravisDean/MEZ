@@ -17,8 +17,7 @@ Platform assembly: C:\Users\Public\Documents\Unity Projects\MezmerzingMusicalMag
 Loading C:\Users\Public\Documents\Unity Projects\MezmerzingMusicalMagic\Builds\vr_hill2_Data\Managed\Assembly-UnityScript-firstpass.dll into Unity Child Domain
 Platform assembly: C:\Users\Public\Documents\Unity Projects\MezmerzingMusicalMagic\Builds\vr_hill2_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
 Loading C:\Users\Public\Documents\Unity Projects\MezmerzingMusicalMagic\Builds\vr_hill2_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
-- Completed reload, in  0.273 seconds
+- Completed reload, in  0.075 seconds
 desktop: 1920x1200 60Hz; virtual: 1920x1200 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
-Platform assembly: C:\Users\Public\Documents\Unity Projects\MezmerzingMusicalMagic\Builds\vr_hill2_Data\Managed\Boo.Lang.dll (this message is harmless)
