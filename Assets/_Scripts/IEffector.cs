@@ -1,9 +1,14 @@
 ﻿using UnityEngine;
 using System;
 
+/// <summary>
+/// All effects responding to key presses, either directly or
+/// at a higher level, use this interface.
+/// </summary>
 public interface IEffector
 {
     void pianoKeyDown();
+    void pianoKeyDown(PianoKeyEventArgs k);
 }
 
 public class Effector : MonoBehaviour

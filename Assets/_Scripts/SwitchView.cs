@@ -14,12 +14,9 @@ public class SwitchView : MonoBehaviour {
 	public GameObject vr_playerAgent;
 	public GameObject vr_entityView;
 
-//	private IList<GameObject> views;
-
 	// Use this for initialization
 	void Start () {
 		setView();
-//		views = new IList<GameObject>();
 	}
 
 	void setView() {

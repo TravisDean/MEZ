@@ -10,8 +10,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/_Scenes/random_hill.unity
   - enabled: 0
-    path: Assets/_Scenes/lux_terrain.unity
-  - enabled: 1
-    path: Assets/_Scenes/simple_particle_preview.unity
+    path: Assets/_Scenes/events.unity
   - enabled: 0
     path: Assets/_Scenes/simple_particle_preview.unity
+  - enabled: 0
+    path: Assets/_Scenes/lux_terrain.unity
+  - enabled: 1
+    path: Assets/_Scenes/key_effects.unity

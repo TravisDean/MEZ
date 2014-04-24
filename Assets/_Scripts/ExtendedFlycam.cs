@@ -24,11 +24,11 @@ public class ExtendedFlycam : MonoBehaviour
            CapsLock:    Toggle cursor locking to screen (you can also press Ctrl+P to toggle play mode on and off).
     */
 
-    public float cameraSensitivity = 90;
-    public float climbSpeed = 4;
-    public float normalMoveSpeed = 10;
+    public float cameraSensitivity = 360;
+    public float climbSpeed = 15;
+    public float normalMoveSpeed = 30;
     public float slowMoveFactor = 0.25f;
-    public float fastMoveFactor = 3;
+    public float fastMoveFactor = 4;
 
     private float rotationX = 0.0f;
     private float rotationY = 0.0f;
