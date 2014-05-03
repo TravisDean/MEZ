@@ -1,22 +1,29 @@
 ﻿using UnityEngine;
 using System;
+using System.Collections.Generic;
 
 /// <summary>
-/// Will map keyboard data to the correct keys.
-/// Still TODO.
+/// Maps keyboard data to the correct keys.
 /// </summary>
-public class MidiPianoEvents : MonoBehaviour, IPianoEvents
+public class MidiPianoEvents : PianoEvents
 {
-    public event EventHandler PianoKeyDown;
-
-    public void pianoKeyDown()
+    public void Update()
     {
-        OnPianoKeyDown(new EventArgs());
+        // For now, seems the best way to do this is to iterate over the entire array
+        // every time and check for each. Seems it would be better to have this changed
+        // when MidiInput changes, perhaps later..
+        for (int midi = 0; midi < 128; midi++)
+        {
+            if (MidiInput.GetKeyDown(midi))
+            {
+                pianoKeyDown(new PianoKeyEventArgs(new PianoKey(midi)));
+            }
+            // TODO: implement for other effects.
+            //if (MidiInput.GetKeyUp(midi))
+            //{
+            //    //pianoKeyUp(new PianoKeyEventArgs(getKeyFromMidi(i)));
+            //}
+        }
     }
 
-    void OnPianoKeyDown(EventArgs e)
-    {
-        if (PianoKeyDown != null)
-            PianoKeyDown(this, e);
-    }
 }

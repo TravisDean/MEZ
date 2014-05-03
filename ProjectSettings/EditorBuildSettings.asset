@@ -6,14 +6,22 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/_Scenes/first.unity
+    path: Assets/_Scenes/Old/first.unity
   - enabled: 0
-    path: Assets/_Scenes/random_hill.unity
+    path: Assets/_Scenes/Old/random_hill.unity
   - enabled: 0
-    path: Assets/_Scenes/events.unity
+    path: Assets/_Scenes/Old/events.unity
   - enabled: 0
-    path: Assets/_Scenes/simple_particle_preview.unity
+    path: Assets/_Scenes/Old/simple_particle_preview.unity
   - enabled: 0
-    path: Assets/_Scenes/lux_terrain.unity
+    path: Assets/_Scenes/Old/lux_terrain.unity
+  - enabled: 0
+    path: Assets/_Scenes/hill_world.unity
+  - enabled: 0
+    path: Assets/_Scenes/Old/vr_piano.unity
+  - enabled: 0
+    path: Assets/_Scenes/piano_roll.unity
+  - enabled: 0
+    path: Assets/_Scenes/hill_world.unity
   - enabled: 1
-    path: Assets/_Scenes/key_effects.unity
+    path: Assets/_Scenes/piano_roll.unity

@@ -1,21 +1,25 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+using System;
+/// <summary>
+/// Calculates the heigh of 
+/// </summary>
 [RequireComponent(typeof(TextMesh))]
-public class HillHeightUpdater : MonoBehaviour {
+public class HillHeightUpdater : MonoBehaviour
+{
     public string heightStr = "Hill Height: ";
     public GameObject hillThing;
 
-    private TextMesh text;
+    private TextMesh mesh;
 
     void Start()
     {
-        text = this.GetComponent<TextMesh>();
-        text.text = heightStr;
+        mesh = this.GetComponent<TextMesh>();
+        mesh.text = heightStr;
     }
-	
-	// Update is called once per frame
-	void Update () {
+
+    void Update()
+    {
         RaycastHit hit;
         if (Physics.Raycast(hillThing.transform.position, Vector3.down, out hit))
         {
@@ -23,11 +27,12 @@ public class HillHeightUpdater : MonoBehaviour {
             var hillTop = hillThing.transform.position.y;
             var height = hillTop - heightOfGround;
 
-            text.text = heightStr + height;
+            var h = Math.Round(height, 2);
+            mesh.text = heightStr + h + "m";  // "meters"
         }
         else
         {
-            text.text = "Error. Hilltop below ground.";
+            mesh.text = "Error. Hilltop below ground.";
         }
-	}
+    }
 }

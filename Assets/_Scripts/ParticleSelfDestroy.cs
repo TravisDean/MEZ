@@ -1,11 +1,9 @@
-﻿/* Attach to a particle system prefab to 
- * destroy it after it is done playing.
- * 
- * Travis Dean
- */
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 
+/// <summary>
+/// Automatic destruction of non-looping particle systems.
+/// </summary>
 [RequireComponent(typeof(ParticleSystem))]
 public class ParticleSelfDestroy : MonoBehaviour {
     float timeDestroy;

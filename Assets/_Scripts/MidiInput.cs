@@ -1,5 +1,8 @@
 ﻿// Unity MIDI Input plug-in / C# interface
 // By Keijiro Takahashi, 2013
+
+
+// Modifications by Travis Dean, 2014.
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
@@ -32,6 +35,13 @@ public class MidiInput : MonoBehaviour
         }
     }
 
+    // Returns the raw key state, for determining differences between
+    // "hit this frame" and "still pressed down".
+    public static float GetRawKey (int noteNumber)
+    {
+        var v = instance.notes [noteNumber];
+        return (v > 0.0) ? v : 0.0f;
+    }
     // Returns true if the key was pressed down in this frame.
     public static bool GetKeyDown (int noteNumber)
     {

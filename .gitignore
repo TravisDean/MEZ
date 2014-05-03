@@ -11,6 +11,8 @@ Thumbs.db
  
 # Temporary and local files #
 #############################
+Builds_Temp/
+Builds_Web/
 [Oo]bj/
 [Tt]emp/
 [Ll]ibrary/

@@ -1,6 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/// <summary>
+/// Translate this object up and down with PgUp/PgDn.
+/// </summary>
 public class HillMover : MonoBehaviour {
     [SerializeField]
     public float positionInterval = 0.1f;
@@ -14,6 +17,5 @@ public class HillMover : MonoBehaviour {
         {
             this.transform.Translate(Vector3.up * positionInterval);
         }
-	
 	}
 }

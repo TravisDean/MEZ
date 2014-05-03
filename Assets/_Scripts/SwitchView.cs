@@ -4,6 +4,11 @@
 using UnityEngine;
 using System.Collections;
 
+/// <summary>
+/// Allows swapping between 4 cameras, normally used as 
+/// VR / normal and first person / detached.
+/// Swap with Enter and Home, respectively.
+/// </summary>
 [ExecuteInEditMode]
 public class SwitchView : MonoBehaviour {
 	public bool usingVR = false;
@@ -14,7 +19,6 @@ public class SwitchView : MonoBehaviour {
 	public GameObject vr_playerAgent;
 	public GameObject vr_entityView;
 
-	// Use this for initialization
 	void Start () {
 		setView();
 	}
@@ -26,7 +30,6 @@ public class SwitchView : MonoBehaviour {
 		vr_entityView.SetActive(usingVR && !usingFPS);
 	}
 		
-	// Update is called once per frame
 	void Update () {
 		// On enter, switch between VR and normal views
 		if (Input.GetKeyDown(KeyCode.Return)) {

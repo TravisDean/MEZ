@@ -1,7 +1,7 @@
 ﻿using System;
 
 /// <summary>
-/// Contains the key that was pressed to pass with the event.
+/// Contains information about the pressed key.
 /// </summary>
 public class PianoKeyEventArgs : EventArgs
 {

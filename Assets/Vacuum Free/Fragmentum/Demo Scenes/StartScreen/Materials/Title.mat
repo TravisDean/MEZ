@@ -1,0 +1,137 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Title
+  m_Shader: {fileID: 4800000, guid: 3505b83ae92c3a04bacf31653c5d6675, type: 3}
+  m_ShaderKeywords:
+  - V_FR_ACTIVATOR_NONE
+  - V_FR_EDITOR_ON
+  m_CustomRenderQueue: -1
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _MainTex
+        second:
+          m_Texture: {fileID: 2800000, guid: c4ed4c919abfec44c875341530ba7859, type: 3}
+          m_Scale: {x: 5, y: 3}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _BumpMap
+        second:
+          m_Texture: {fileID: 2800000, guid: 1cdf1091d7dbe1e49b4d721aa5ff6edc, type: 3}
+          m_Scale: {x: 5, y: 5}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Cube
+        second:
+          m_Texture: {fileID: 8900000, guid: d1e36024b92cf40788c18d8e6420bdb6, type: 2}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _FragTex
+        second:
+          m_Texture: {fileID: 2800000, guid: 33012151ee7deb74a8ab2c680300e094, type: 3}
+          m_Scale: {x: 3, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _DissolveTex
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _NormalMap
+        second:
+          m_Texture: {fileID: 2800000, guid: b3e3bb55f10dc644daa8a354dc0030ed, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+    m_Floats:
+      data:
+        first:
+          name: _Shininess
+        second: .600610971
+      data:
+        first:
+          name: _Emission
+        second: .230769232
+      data:
+        first:
+          name: _FragTexStrength
+        second: .519230783
+      data:
+        first:
+          name: _FragPow
+        second: 3.94230771
+      data:
+        first:
+          name: _DistanceToPlane
+        second: 0
+      data:
+        first:
+          name: _DisAmount
+        second: 400
+      data:
+        first:
+          name: _Lock
+        second: 0
+      data:
+        first:
+          name: _FragmentScale
+        second: -50
+      data:
+        first:
+          name: _RotSpeed
+        second: 50
+      data:
+        first:
+          name: _TimeOffset
+        second: 0
+      data:
+        first:
+          name: _DispDirectionNoise
+        second: 1
+      data:
+        first:
+          name: _DispRotationNoise
+        second: 10
+      data:
+        first:
+          name: _DissolveAmount
+        second: 1
+      data:
+        first:
+          name: _DispStretch
+        second: 10
+    m_Colors:
+      data:
+        first:
+          name: _Color
+        second: {r: .626865685, g: .82778424, b: 1, a: 1}
+      data:
+        first:
+          name: _SpecColor
+        second: {r: .679104447, g: .932679236, b: 1, a: 1}
+      data:
+        first:
+          name: _ReflectColor
+        second: {r: .50746268, g: .793340981, b: 1, a: .600000024}
+      data:
+        first:
+          name: _AddForce
+        second: {r: 0, g: 0, b: 0, a: 0}
+      data:
+        first:
+          name: _DissolveColor
+        second: {r: 1, g: 1, b: 1, a: .100000001}
